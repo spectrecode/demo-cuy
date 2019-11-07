@@ -48,6 +48,7 @@
 .planes h3 {
   font-size: 40px;
   font-family: 'Bungee', cursive;
+  height: 90px;
 }
 
 .planes__box {
@@ -67,6 +68,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.planes__box > :nth-child(6){
+  padding: 0 0 20px;
 }
 
 .planes__incluye {
@@ -129,7 +134,7 @@
 .planes__total .total span {
   color: #FF7914;
   font-size: 28px;
-  height: 50px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,7 +169,7 @@
 
 .planes__total .caducidad {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .planes__calculador .campo {
@@ -199,10 +204,17 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.planes__calculador,
+.planes__pedido{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .planes__calculador{
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 25px 0 30px;
 }
+
 .planes__calculador select {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -293,9 +305,10 @@
 .planes__pedido button {
   font-family: 'Bungee', cursive;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #FF7914;
-  padding: 0 15px;
+  padding: 0 13px;
+  margin-top: 7px;
   border-radius: 25px;
   border: 3px solid white;
   -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.1);
@@ -309,5 +322,6 @@
 .planes__pedido .faq,
 .planes__pedido .portabilidad {
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 11px;
+  margin-top: 5px;
 }
